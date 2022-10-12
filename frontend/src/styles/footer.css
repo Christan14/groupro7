@@ -1,0 +1,70 @@
+
+#sticky-footer{
+    
+    display: flex;
+    /*position: fixed;*/
+    bottom: 0;
+    left: 0;
+
+    padding: 3rem;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between; /*positionner la DIV enfants*/
+    /*width: 90rem; /*nécessaire de préciser une width si position: fixed*/
+    background-color:#FD2D01;
+}
+
+.container{
+    margin-left: 25rem;
+    
+}
+
+
+.flex-shrink-0{
+    /*width: 100%;*/
+    margin-top: 3rem;
+    /*padding: 3rem;
+    display: flex;*/
+}
+
+@media screen and (max-width: 768px) {
+
+  .text-center{
+     margin-left: 16rem;
+  }
+}
+
+@media screen and (min-width: 1440px) /*and (min-width: 1024px)*/{
+
+    .container{
+        margin-left: 25rem;
+        font-size: 2.8em;
+    }
+
+    .navbar-toggler{
+        display: none;
+    }
+  
+}
+
+@media screen and (min-width: 2560px){
+
+    .container{
+        margin-left: 60rem;
+        font-size: 2.8em;
+  }
+  
+}
+
+@media screen and (min-width: 320px){
+    /*.cont{
+        margin: 15rem;
+    }*/
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        margin-left: 19rem;
+        font-size: 1.8em;
+    }   
+}
