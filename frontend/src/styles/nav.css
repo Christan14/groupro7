@@ -65,14 +65,14 @@ button {
   }
 
   .collapse{
-    margin-left: 12rem;
+    margin-left: 2rem;
   }
 }
 
 
 @media screen and (min-width: 1440px){
   .collapse{
-    margin-left: 30rem;
+    margin-left: 20rem;
   }
 }
 
@@ -86,7 +86,7 @@ button {
   }
 
   .navbar-collapse{
-    margin-left: 75rem;
+    margin-left: 60rem;
   }
 }
 

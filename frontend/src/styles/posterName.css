@@ -1,5 +1,36 @@
 body{
-    display: flex;
-    height: 100vh;
+    /*display: flex;
+    height: 100vh;*/
+    flex-direction: column;
 }
 
+@media only screen and (min-width: 630px) {
+
+    body{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 425px){
+    .body {
+      flex-direction: column;
+    }
+
+    form{
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width: 375px){
+
+    form{
+        padding: 2rem;
+    }
+}
+
+@media only screen and (min-width: 320px){
+
+    form{
+        padding: 2rem;
+    }
+}

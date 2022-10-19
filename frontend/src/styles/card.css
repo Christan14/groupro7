@@ -20,7 +20,7 @@ h1{
 .row {
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 0;
   border: solid blue;
 }
 
@@ -41,6 +41,13 @@ h1{
 .btn {
   margin: 10px;
 }
+
+.profile-page{
+  height: 100em;
+  margin-bottom: 0;
+  margin-top: 90rem;
+}
+
 @media only screen and (min-width: 1440px) and (min-width: 1040px)  {
     .profile-header {
         margin: 15rem;
@@ -54,8 +61,28 @@ h1{
 }
 
 @media screen and (min-width: 2560px) {
+  /*body{
+    margin-left: -65rem;
+    padding: 10r
+  }
+
   .profile-header {
     margin: 50rem;
+  }
+  
+  .center-profil{
+    margin-left: -30rem;
+    padding: 5rem;
+  }*/
+
+  .row{
+    padding: 0;
+  }
+
+  .profile-page{
+    height: 100em;
+    margin-bottom: 0;
+    margin-top: 90rem;
   }
 }
 
