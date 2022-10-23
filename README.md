@@ -21,13 +21,15 @@ Le backend a été crée avec Node.js, Express.js, NOSQL comme base de données.
 
 INSTALLATION 
 
+-Crée les dossiers .ENV et IMAGE.
+
 -Dans le terminal de  VSCODE, situez-vous  dans le dossier /backend.
 
 -Dans le dossier /backend demarrez NPM INSTALL pour installer toutes les dépendances du frontend.
 
 -Dans le  fichier .ENV, veuillez rentrer le host les identifiants de votre utilisateur admin et le mon de la base de données que vous  souhaitez crée.
 
--Uplodé le fichier users.json dans la collection user de la base de donnée crée sur Mongodb.
+-Uplodé le fichier users.json dans la collection user de la base de donnée crée sur Mongodb./*/
 
 -Démarrer NPM START  pour lancer le projet.
 

@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: space-between; /*positionner la DIV enfants*/
     /*width: 90rem; /*nécessaire de préciser une width si position: fixed*/
-    background-color:#FD2D01;
+    background-color: #4E5166;
 }
 
 .container{

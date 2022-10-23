@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+h1, p{
+  font-family: lato;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

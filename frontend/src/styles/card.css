@@ -13,6 +13,10 @@ body {
 
 }
 
+button{
+  background-color: #fd2d01;
+}
+
 h1{
     display: none;
 }
@@ -21,11 +25,11 @@ h1{
   justify-content: center;
   align-items: center;
   padding: 0;
-  border: solid blue;
+  /*border: solid blue;*/
 }
 
 .col-lg-4 {
-  border: solid fuchsia;
+  /*border: solid fuchsia;*/
   margin-bottom: 6px;
 }
 

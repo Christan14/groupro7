@@ -13,11 +13,11 @@ import Errors from "../pages/404";
 const index = () => {
   return (
     <Routes>
-      <Route  path="/" exact element={<Home />} />
-      <Route path="/register" element={<Register />} />
+      <Route  path="/" exact element={<Register />} />
       <Route path="/login" element={<Login />} />
       <Route path="/profil" element={<Profil />} />
       <Route path="/profils" element={<Profils />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/updateProfil/:idUser" element={<UpdateProfil />} />
       <Route path="/updatePost/:idPost" element={<UpdatePost />} />
       <Route path="/*" element={<Errors />} />

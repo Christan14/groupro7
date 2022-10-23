@@ -1,4 +1,4 @@
-import React, { useEffect, useState, } from "react";
+import React, { useEffect, useState } from "react";
 import Post from "../components/post";
 import { useNavigate } from "react-router-dom";
 
@@ -10,18 +10,17 @@ const Home = () => {
   const [imgfile, uploadimg] = useState([]);
   const [post, setPost] = useState("");
 
-  const formData = new FormData();
-  formData.apprend("post_image", imgfile);
-  formData.apprend("message", post);
-  formData.apprend("posterId", userAuth ? userAuth._id : userAuth);
-  console.log(formData);
+  let formData = new FormData();
+  formData.append("post_image", imgfile);
+  formData.append("message", post);
+  formData.append("posterId", userAuth ? userAuth._id : userAuth);
 
   function imgFilehandler(e) {
     return uploadimg(e.target.files[0]);
   }
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/posts", {
+    fetch(`${process.env.REACT_APP_BASE_URL}api/posts`, {
       method: "GET",
       withCredentials: true,
       headers: {
@@ -40,7 +39,7 @@ const Home = () => {
 
   const postIn = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5000/api/posts/", {
+    fetch(`${process.env.REACT_APP_BASE_URL}api/posts/`, {
       method: "POST",
       body: formData,
       withCredentials: true,
@@ -65,7 +64,7 @@ const Home = () => {
               <form onSubmit={postIn} encType="multipart/form-data">
                 <h1>The Wall</h1>
                 <div className="form-group row">
-                  <label htmCRLFor="message" className="col-4 col-form-label">
+                  <label htmlFor="message" className="col-4 col-form-label">
                     Message
                   </label>
                   <div className="col-8">
@@ -81,7 +80,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="form-group row">
-                  <label htmCRLFor="picture" className="col-4 col-form-label">
+                  <label htmlFor="picture" className="col-4 col-form-label">
                     Picture
                   </label>
                   <div className="col-8">

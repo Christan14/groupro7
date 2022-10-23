@@ -7,7 +7,7 @@ const Login = () => {
   const SignIn = (e) => {
     localStorage.setItem("userAuth", JSON.stringify({}));
     e.preventDefault();
-    fetch("http://localhost:5000/api/auth/signin", {
+    fetch(`${process.env.REACT_APP_BASE_URL}/api/auth/signin`, {
       method: "POST",
       withCredentials: true,
       body: JSON.stringify({ email: email, password: password }),

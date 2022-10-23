@@ -4,6 +4,10 @@ body{
     flex-direction: column;
 }
 
+form{
+    background-color: #ffd7d7;
+}
+
 @media only screen and (min-width: 630px) {
 
     body{

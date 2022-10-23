@@ -1,5 +1,5 @@
 .App {
-    background-color: wheat;
+    background-color: #FD2D01;
 }
 
 .center-block{
@@ -8,7 +8,7 @@
     align-items: center;
     width: 100vw;
     height: 167vh;
-    border: solid fuchsia;
+    /*border: solid fuchsia;*/
 }
 
 .Auth-form{
@@ -17,7 +17,7 @@
     padding-top: 30px;
     padding-bottom: 20px;
     border-radius: 8px;
-    background-color: rgb(252, 247, 247);
+    background-color: #ffd7d7;
 }
 
 .Auth-form-title{

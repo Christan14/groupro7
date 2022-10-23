@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Card = ({ picture, pseudo, emial, bio, isAdmin, id }) => {
     const deleteProfil = () => {
-        fetch(`http://localhost:3000/api/auth/delete/${id}`, {
+        fetch(`${process.env.REACT_APP_BASE2_URL}/api/auth/delete/${id}`, {
           method: "DELETE",
           withCredentials: true,
           headers: {
@@ -44,7 +44,7 @@ const Card = ({ picture, pseudo, emial, bio, isAdmin, id }) => {
                                 Update
                             </Link>
                             <button onClick={deleteProfil} className="btn btn-primry btn-round btn-simple">
-                                delete
+                                Delete
                             </button>
                         </div>
                     </div>
