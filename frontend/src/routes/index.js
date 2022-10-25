@@ -14,6 +14,7 @@ const index = () => {
   return (
     <Routes>
       <Route  path="/" exact element={<Register />} />
+      <Route path="/register" element={<Register/>} />
       <Route path="/login" element={<Login />} />
       <Route path="/profil" element={<Profil />} />
       <Route path="/profils" element={<Profils />} />

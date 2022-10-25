@@ -2,8 +2,18 @@
   text-align: center;
 }
 
-h1, p{
+h1, h4, p {
+  display: flex;
   font-family: lato;
+  text-align: center;
+    /*font-family: 'Dancing Script', cursive;*/
+  /*font-weight: 700;
+  text-shadow: 2px 2px 5px black;
+  color: white;
+  border: solid 2px;
+  background-color: beige;
+  padding: 2em;
+  color: red;*/
 }
 
 .App-logo {
@@ -39,4 +49,43 @@ h1, p{
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(253,45,1,var(--tw-bg-opacity));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.min-h-screen {
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.h-full {
+  height: 100%;
 }

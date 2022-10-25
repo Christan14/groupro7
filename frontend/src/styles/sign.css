@@ -21,6 +21,7 @@
 }
 
 .Auth-form-title{
+    justify-content: center;
     text-align: center;
     margin-bottom: 1rem;
     font-size: 24px;

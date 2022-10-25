@@ -9,7 +9,7 @@ const Register = () => {
   const navigate = useNavigate();
   const signUp = (e) => {
     e.preventDefault();
-    fetch( `${process.env.REACT_APP_BASE_URL}/api/auth/signup`, {
+    fetch(`${process.env.REACT_APP_BASE_URL}/api/auth/signup`, {
       method: "POST",
       withCredentials: true,
       body: JSON.stringify({

@@ -18,7 +18,9 @@ button{
 }
 
 h1{
-    display: none;
+  font-family: lato;
+  display: flex;
+  
 }
 
 .row {
@@ -44,6 +46,7 @@ h1{
 
 .btn {
   margin: 10px;
+
 }
 
 .profile-page{
