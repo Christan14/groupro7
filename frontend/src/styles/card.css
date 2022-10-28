@@ -3,6 +3,10 @@
   margin: 15rem;
 }
 
+.profile-header{
+  margin: 2rem
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -35,8 +39,9 @@ h1{
   margin-bottom: 6px;
 }
 
-.profile-image {
+.float-md-right {
   border: solid black;
+  padding: 50px;
 }
 
 .col-lg-8 {
@@ -63,7 +68,7 @@ h1{
 
 @media only screen and (min-width: 630px) {
   .card {
-    margin: 10rem;
+    margin: 2rem;
   }
 }
 

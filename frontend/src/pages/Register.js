@@ -23,17 +23,13 @@ const Register = () => {
     })
       .then((res) => res.json())
       .then((res) => {
-        alert(res.message);
-        console.log(res);
         navigate("/login");
         if (res.error) {
           console.log(res.error);
-          alert(res.error);
         }
       })
       .catch((err) => {
         console.log(err);
-        alert(err);
       });
   };
 

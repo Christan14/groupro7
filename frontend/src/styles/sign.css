@@ -39,3 +39,8 @@
     font-weight: 600;
     color: rgb(34, 34, 34);
 }
+
+button{
+    background-color: #FD2D01!important;
+    border: none!important;;
+}
